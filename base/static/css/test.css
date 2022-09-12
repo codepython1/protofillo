@@ -1,0 +1,42 @@
+:root{
+    --mainColor:#eaeaea;
+    --secondaryColor:#fff;
+
+    --borderColor:#c1c1c1;
+
+    --mainText:black;
+    --secoundaryText:#4b5156;
+
+}
+
+
+
+.s1{
+    background-color:var(--mainColor);
+    border-bottom: 1px solid var(--borderColor);
+    overflow: auto;
+}
+
+.s2{
+    background-color:var(--secondaryColor);
+    border-bottom:1px solid var(--borderColor);
+    overflow: auto;
+    
+}
+.main-container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width:1200px) {
+    .main-container{
+        width:95%;
+    }
+}
+
+.greeting-wrapper {
+    display: grid;
+    text-align: center;
+    align-content: center;
+    min-height: 10em;
+}

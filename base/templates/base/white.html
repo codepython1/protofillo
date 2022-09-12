@@ -1,0 +1,297 @@
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body
+{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #fff;
+}
+
+
+.container
+{
+    position: relative;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(260px,1fr));
+    grid-template-rows: auto;
+    grid-gap: 0 40px;
+}
+.container .box
+{
+    position: relative;
+    height: 400px;
+    background: #3b3a3a;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+}
+
+.container .box::before
+{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    transform: skew(2deg,2deg);
+    z-index: -1;
+}
+
+.container .box:nth-child(1)::before
+{
+    background: linear-gradient(315deg,#ff0057,#e64a19);
+}
+.container .box:nth-child(2)::before
+{
+    background: linear-gradient(315deg,#89ff00,#00bcd4);
+}
+.container .box:nth-child(3)::before
+{
+    background: linear-gradient(315deg,#e91e63,#5d02ff);
+}
+.container .box:nth-child(4)::before
+{
+    background: linear-gradient(315deg,#ff0000,#ffc107);
+}
+
+.container .box::after
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255,255, 255, 0.05);
+    pointer-events: none;
+}
+.content
+{
+    position: relative;
+    padding: 20px;
+    transform: translateY(40px);
+}
+
+.box .content h2
+{
+    position: absolute;
+    top: -60px;
+    right: 20px;
+    margin: 0;
+    padding: 0;
+    font-size: 10em;
+    color: rgba(255,255,255,0.05);
+    transition: 0.5s;
+}
+
+.box:hover .content h2
+{
+    top: -140px;
+}
+
+.box .content h3
+{
+    margin: 0 0 10px;
+    padding: 0;
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.box .content p
+{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 16px;
+}
+
+.box .content a
+{
+    position: relative;
+    margin: 20px 0 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 1px solid #fff;
+    display: inline-block;
+    color: #fff;
+    transition: 0.5s;
+    transform: translateY(-40px);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.box:hover .content a
+{
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+.box .content a:hover
+{
+    color: #000;
+    background: #fff;
+}
+a 
+{
+	position: relative;
+	background: rgb(68, 68, 68);
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 1.5em;
+	letter-spacing: 0.1em;
+	font-weight: 400;
+	padding: 10px 30px;
+	transition: 0.5s;
+}
+a:hover 
+{
+	letter-spacing: 0.25em;
+	background: var(--clr);
+	color: var(--clr);
+	box-shadow: 0 0 35px var(--clr);
+}
+a::before 
+{
+	content: '';
+	position: absolute;
+	inset: 2px;
+	background: #2c272b;
+}
+a span 
+{
+	position: relative;
+	z-index: 1;
+}
+a i 
+{
+	position: absolute;
+	inset: 0;
+	display: block;
+}
+a i::before 
+{
+	content: '';
+	position: absolute;
+	top: -6px;
+	left: 100%;
+	transform: translateX(-50%);
+	width: 10px;
+	height: 10px;
+	background: #2c2729;
+	border: 2px solid var(--clr);
+	transition: 0.5s;
+}
+a:hover i::before 
+{
+	left: 0%;
+	transform: translateX(-50%) rotate(45deg);
+	box-shadow: 40px 39px var(--clr);
+}
+
+
+a i::after 
+{
+	content: '';
+	position: absolute;
+	bottom: -6px;
+	left: 0;
+	transform: translateX(-50%);
+	width: 10px;
+	height: 10px;
+	background: #2c2729;
+	border: 2px solid var(--clr);
+	transition: 0.5s;
+}
+a:hover i::after 
+{
+	left: 100%;
+	transform: translateX(-50%) rotate(-45deg);
+	box-shadow: 38px -39px var(--clr);
+}
+h1
+{
+    color: black;
+}
+</style>
+
+{% load static %}
+
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <title>Dhaval</title>
+  </head>
+  <body>
+
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-sm-5 col-md-6">
+          <div class="card" style="width: 18rem;">
+            <img src="{% static "images/Test.png" %}" alt="Trying To Load...">
+            <div class="card-body">
+              <h1 class="card-text">Hi I'm Dhaval</h1>
+            </div>
+          </div>
+          <a href="#" style="--clr:#1e9bff"><span>Blue</span><i></i></a>
+          <a href="#" style="--clr:#f2d8e1"><span>White</span><i></i></a>
+          <!-- <a href="#" style="--clr:#6eff3e"><span>Green</span><i></i></a> -->
+        </div>    
+        </div>
+        <!-- <div class="col-sm-5 offset-sm-2 col-md-16 offset-md-20"> -->
+          <div class="row">
+            <div class="col-md-3" >
+            <div class="countainer">
+              <div class="container">
+                <div class="box">
+                    <div class="content">
+                        <!-- <h2>01</h2> -->
+                        <h3>Service One</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum molestiae deserunt repellat. </p>
+                        <a href="#"> Read More</a>
+                    </div>
+                </div>
+              </div>  
+            </div>
+          </div>
+
+        <!-- </div> -->
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-md-5 col-lg-6">.col-sm-6 .col-md-5 .col-lg-6</div>
+        <div class="col-sm-6 col-md-5 offset-md-2 col-lg-6 offset-lg-0">.col-sm-6 .col-md-5 .offset-md-2 .col-lg-6 .offset-lg-0</div>
+      </div>
+    </div>
+
+    <div class="grid text-center">
+      <div class="row">
+        <div class="col-md-3">
+        <div class="profilepic" >
+
+      </div>
+
+    </div>
+
+  </body>
+</html>
