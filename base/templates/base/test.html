@@ -1,19 +1,11 @@
+{% extends 'base/baas.html'%}
+
 {% load static %}
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dhaval</title>
-    <link rel="stylesheet" href="{% static "css/ds.css" %}"/>
-    <link rel="stylesheet" href="{% static "css/test.css" %}"/>
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
-    />
-  </head>
-  <body>
+
+{% block content %}
+  
+
 
     <h1>The Website Is Under Construction</h1>
 
@@ -62,7 +54,7 @@
                 <span> In This Project I Make An AI Talk To People</span>
               </h3>
             </div>
-            <a href="#" style="--clr:#ffffff"><span>Open</span><i></i></a>
+            <a href="/jarvis" style="--clr:#ffffff"><span>Open</span><i></i></a>
           </div>
         </div>
 
@@ -92,7 +84,7 @@
                   <span> In This Project I Drawing Lord Ganpati Bappa Using Turtle Graphics </span>
                 </h3>
               </div>
-              <a href="https://bit.ly/3RQC1Sc" target="_blank" style="--clr:#ffffff"><span>Open</span><i></i></a>
+              <a href="/drawing" target="_blank" style="--clr:#ffffff"><span>Open</span><i></i></a>
             </div>
         </div>
 
@@ -107,7 +99,7 @@
                 <span> I Make An Weather App In Python Using API </span>
               </h3>
             </div>
-            <a href="#" style="--clr:#ffffff"><span>Open</span><i></i></a>
+            <a href="/weather" style="--clr:#ffffff"><span>Open</span><i></i></a>
       </div>
     </section>
     <script src="{% static "css/vanilla-tilt.min.js" %}"></script>
@@ -119,5 +111,5 @@
         "max-glare": 1,
       });
     </script>
-  </body>
-</html>
+
+{% endblock%}

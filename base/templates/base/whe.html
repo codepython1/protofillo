@@ -1,0 +1,20 @@
+{% extends 'base/baas.html'%}
+
+
+{% load static %}
+
+
+{% block content %}
+
+<script src="{% static "js/jarvis.js" %}"></script>
+    
+<link rel="stylesheet" href="{% static "css/jar.css" %}">
+
+<div>
+  <h3> Weather App </h3>
+
+  <iframe frameborder="0" width="100%" height="500px" src="https://replit.com/@DhavalP2/Weather?embed=true"></iframe>
+
+</div>
+
+{% endblock %}

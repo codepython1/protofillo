@@ -1,0 +1,22 @@
+{% extends 'base/baas.html'%}
+
+
+{% load static %}
+
+
+{% block content %}
+
+<script src="{% static "js/jarvis.js" %}"></script>
+    
+<link rel="stylesheet" href="{% static "css/jar.css" %}">
+
+<div>
+  <h1> Hi I Am Jarvis </h1>
+
+  <div class="b1">
+    <a href="/jarvis" style="--clr:#1773e3"><span>Start</span><i></i></a>
+  </div>
+
+</div>
+
+{% endblock %}
