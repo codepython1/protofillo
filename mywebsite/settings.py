@@ -27,7 +27,7 @@ SECRET_KEY = '+1)#q3)b5key@t&!@)bk@kxt_q!4r%9+l!mmc7yo9q$vz)s_0='
 DEBUG = True
 
 
-ALLOWED_HOSTS = ['dhavalpatil.herokuapp.com','127.0.0.1']
+ALLOWED_HOSTS = ['dhavalpatil.herokuapp.com','127.0.0.1','dhaval.up.railway.app']
 
 
 # Application definition
