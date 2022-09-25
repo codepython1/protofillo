@@ -30,6 +30,7 @@ DEBUG = False
 ALLOWED_HOSTS = ['dhavalpatil.herokuapp.com','127.0.0.1','https://dhaval.up.railway.app']
 
 
+
 # Application definition
 
 INSTALLED_APPS = [
