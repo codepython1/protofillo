@@ -3,5 +3,5 @@ services:
     name: szp
     env: python
     buildCommand: ".\build.sh"
-    startCommand: "gunicorn mywebsite.wsgi:application"
+    startCommand: "web: gunicorn -b :$PORT mywebsite:app"
 
