@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: szp
+    env: python
+    buildCommand: ".\build.sh"
+    startCommand: "gunicorn mywebsite.wsgi:application"
+
