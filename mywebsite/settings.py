@@ -26,7 +26,7 @@ SECRET_KEY = '+1)#q3)b5key@t&!@)bk@kxt_q!4r%9+l!mmc7yo9q$vz)s_0='
 DEBUG = False
 
 
-ALLOWED_HOSTS = ['dhavalpatil.herokuapp.com','127.0.0.1','dhaval.up.railway.app','dhaval-mbkm.onrender.com','dhavalpatil.onrender.com']
+ALLOWED_HOSTS = ['127.0.0.1',,'dhavalpatil.onrender.com','dhaval.ga']
 
 
 
